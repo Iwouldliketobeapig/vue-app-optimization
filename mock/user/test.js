@@ -8,5 +8,3 @@ Mock.mock('http://localhost:8080/test', 'get',
     ]
   }
 )
-
-// export default test
