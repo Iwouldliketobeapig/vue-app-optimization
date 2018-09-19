@@ -80,6 +80,27 @@
         </a>
       </li>
     </ul>
+    <h2>集成功能</h2>
+    <ul>
+      <li>
+        <a
+          href="https://www.npmjs.com/package/validate-commit-ms"
+          target="_blank"
+        >
+          validate-commit-msg
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a
+          href="https://stylelint.io/"
+          target="_blank"
+        >
+          stylelint
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -102,7 +123,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h1, h2 {
   font-weight: normal;
 }
