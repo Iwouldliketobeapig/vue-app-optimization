@@ -128,3 +128,41 @@ plugins: [
 ]
 ```
 [stylelint](https://stylelint.io/)[stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin)
+
+## Mock
+
+*前后端分期*
+
+### 方法
+
+> 安装mockjss
+```bash
+npm i --D mockjs
+```
+
+> 我在项目中创建了个mock，定义了个test
+```javascript
+const Mock = require('mockjs')
+Mock.mock('/test', 'get',
+  {
+    'userList|1-10': [
+      {
+        'id|1-10': 2
+      }
+    ]
+  }
+)
+```
+
+> 在src下的App.vue中引入(通过添加环境变量引入，可以快速切换)
+```javascript
+import '../mock'
+```
+
+> HelloWord.vue中测试
+```javascript
+axios.get('/test')
+  .then(res => {
+    console.log(res)
+  })
+```

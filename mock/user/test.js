@@ -1,5 +1,5 @@
 const Mock = require('mockjs')
-Mock.mock('http://localhost:8080/test', 'get',
+Mock.mock('/test', 'get',
   {
     'userList|1-10': [
       {

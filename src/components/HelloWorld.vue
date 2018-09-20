@@ -90,8 +90,6 @@
           validate-commit-msg
         </a>
       </li>
-    </ul>
-    <ul>
       <li>
         <a
           href="https://stylelint.io/"
@@ -114,7 +112,7 @@ export default {
     }
   },
   mounted () {
-    axios.get('http://localhost:8080/test')
+    axios.get('/test')
       .then(res => {
         console.log(res)
       })
