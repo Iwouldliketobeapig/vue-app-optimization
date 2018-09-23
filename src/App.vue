@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import '../mock'
 export default {
   name: 'App'
 }

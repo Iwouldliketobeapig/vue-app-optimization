@@ -24,7 +24,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 *管理团队的commit信息*
 
-### 方法
+### 步奏
 
 > 安装validate-commit-msg
 ```bash
@@ -77,7 +77,7 @@ npm i --D husky
 
 *管理团队css编写规范*
 
-### 方法
+### 步奏
 > 安装stylelint, stylelint-order, stylelint-processor-html, stylelint-scss, stylelint-webpack-plugin
 ```bash
 // stylelint-order: 属性顺序插件
@@ -127,13 +127,13 @@ plugins: [
   }),
 ]
 ```
-[stylelint](https://stylelint.io/)[stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin)
+[stylelint](https://stylelint.io/) [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin)
 
 ## Mock
 
 *前后端分期*
 
-### 方法
+### 步奏
 
 > 安装mockjss
 ```bash
@@ -166,3 +166,20 @@ axios.get('/test')
     console.log(res)
   })
 ```
+
+## Sentry
+
+*管理生产bug*
+
+### 步奏
+> 在Sentry上创建一个项目获取DNS
+> 在main.js添加
+```javascript
+import Raven from 'raven-js'
+import RavenVue from 'raven-js/plugins/vue'
+Raven
+  .config('https://4ff044c4c2374c359a94d58b2c3e89d5@sentry.io/1285464')
+  .addPlugin(RavenVue, Vue)
+  .install()
+```
+*npm run dev下，Vue会主动捕获所有的错误并将其输出到控制台，Sentry无法捕获到错误*
