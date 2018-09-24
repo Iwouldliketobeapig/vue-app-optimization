@@ -1,4 +1,4 @@
-# vue-app-optimization
+**简单的集成到了vue-cli生成的项目上**
 
 > A Vue.js project
 
@@ -71,7 +71,7 @@ npm i --D husky
   }
 }
 ```
-[validate-commit-msg](https://www.npmjs.com/package/validate-commit-msg)
+[查看validate-commit-msg详情](https://www.npmjs.com/package/validate-commit-msg)
 
 ### 集成stylelint
 
@@ -127,7 +127,7 @@ plugins: [
   }),
 ]
 ```
-[stylelint](https://stylelint.io/) [stylelint-webpack-plugin](https://www.npmjs.com/package/stylelint-webpack-plugin)
+[查看stylelint详情](https://stylelint.io/) [查看stylelint-webpack-plugin详情](https://www.npmjs.com/package/stylelint-webpack-plugin)
 
 ## Mock
 
@@ -166,6 +166,7 @@ axios.get('/test')
     console.log(res)
   })
 ```
+[查看mockjs详情](http://mockjs.com/)
 
 ## Sentry
 
@@ -183,3 +184,4 @@ Raven
   .install()
 ```
 `npm run dev下，Vue会主动捕获所有的错误并将其输出到控制台，Sentry无法捕获到错误`
+[查看Sentry详情](https://sentry.io/welcome/)
