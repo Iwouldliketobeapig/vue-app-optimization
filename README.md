@@ -20,7 +20,7 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## 集成validate-commit-msg
+## 一、集成validate-commit-msg
 
 *管理团队的commit信息*
 
@@ -73,7 +73,7 @@ npm i --D husky
 ```
 [查看validate-commit-msg详情](https://www.npmjs.com/package/validate-commit-msg)
 
-### 集成stylelint
+## 二、集成stylelint
 
 *管理团队css编写规范*
 
@@ -129,7 +129,7 @@ plugins: [
 ```
 [查看stylelint详情](https://stylelint.io/) [查看stylelint-webpack-plugin详情](https://www.npmjs.com/package/stylelint-webpack-plugin)
 
-## Mock
+## 三、Mock
 
 *前后端分期*
 
@@ -168,7 +168,7 @@ axios.get('/test')
 ```
 [查看mockjs详情](http://mockjs.com/)
 
-## Sentry
+## 四、Sentry
 
 *管理生产bug*
 
