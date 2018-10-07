@@ -184,4 +184,5 @@ Raven
   .install()
 ```
 `npm run dev下，Vue会主动捕获所有的错误并将其输出到控制台，Sentry无法捕获到错误`
+
 [查看Sentry详情](https://sentry.io/welcome/)

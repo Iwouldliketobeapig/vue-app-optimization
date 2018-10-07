@@ -48,8 +48,19 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        // loader: 'babel-loader',
+        use: [
+          {
+            loader: 'babel-loader'
+          },
+          {
+            loader: path.resolve('./loaders/testLoader.js')
+          }
+        ],
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
