@@ -54,7 +54,10 @@ module.exports = {
             loader: 'babel-loader'
           },
           {
-            loader: path.resolve('./loaders/testLoader.js')
+            loader: path.resolve('./loaders/testLoader.js'),
+            options: {
+              dutaoTest: true
+            }
           }
         ],
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
