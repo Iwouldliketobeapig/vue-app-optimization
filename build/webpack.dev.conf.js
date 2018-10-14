@@ -60,6 +60,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       files: ['**/*.s?(a|c)ss', '**/*.vue'],
       syntax: 'scss'
     }),
+    new webpack.optimize.CommonsChunkPlugin('common.js'),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
